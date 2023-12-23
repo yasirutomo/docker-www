@@ -52,3 +52,7 @@ GRANT SELECT
 ON db1.* TO 'admin_restore_temp'@'localhost' 
 IDENTIFIED BY 'its_pwd';
 ```
+
+## Permison www-data
+- chown -R www-data:www-data public
+- chmod -R 755
