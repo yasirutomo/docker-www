@@ -9,7 +9,7 @@ server {
     listen 80;
     listen [::]:80;
 
-    #root /var/www/ex1.pypip.id/html;
+    #root /var/www/pypip.id/html;
     #index index.php index.html index.htm index.nginx-debian.html;
 
     server_name pypip.id www.pypip.id;
@@ -38,7 +38,17 @@ server {
 - sudo systemctl reload nginx
 
 --- minta SSL
-- certbot --nginx -d ex1.pypip.id -d www....
+- certbot --nginx -d ex1.pypip.id -d www.pypip.id
 - sudo systemctl status snap.certbot.renew.service (verifikasi auto renew jalan)
 - certbot renew --dry-run
-- https://ex1.pypip.id/
+- https://pypip.id/
+
+## Database
+- restore: cat backup.sql | docker exec -i CONTAINER /usr/bin/mysql -u root --password=root DATABASE
+- backup: docker exec CONTAINER /usr/bin/mysqldump -u root --password=root DATABASE > DATABASE.sql
+- user:
+```
+GRANT SELECT
+ON db1.* TO 'admin_restore_temp'@'localhost' 
+IDENTIFIED BY 'its_pwd';
+```

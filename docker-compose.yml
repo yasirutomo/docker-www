@@ -25,6 +25,17 @@ services:
         depends_on:
             - mariadb
 
+    # PHP Service
+    php-80:
+        container_name: php-80
+        build:
+            dockerfile: php80-dockerfile
+        volumes:
+            - './www-cas-pypip/public:/var/www/html/cas-pypip'
+            - ./config/php80.ini:/usr/local/etc/php/php.ini
+        depends_on:
+            - mariadb
+
     # App 1 Nginx Service
     app-pypip:
         container_name: app-pypip
@@ -56,6 +67,22 @@ services:
             - './log/access-akses-pypip.log:/var/log/nginx/access.log'
         depends_on:
             - php-74
+
+    # App 1 Nginx Service
+    app-cas-pypip:
+        container_name: app-cas-pypip
+        image: nginx:latest
+        ports:
+            - 8082:80
+        links:
+            - 'php-80'
+        volumes:
+            - './www-cas-pypip/public:/var/www/html/cas-pypip'
+            - './nginx-conf-cas-pypip:/etc/nginx/conf.d'
+            - './log/error-cas-pypip.log:/var/log/nginx/error.log'
+            - './log/access-cas-pypip.log:/var/log/nginx/access.log'
+        depends_on:
+            - php-80
 
     # MariaDB Service
     mariadb:
