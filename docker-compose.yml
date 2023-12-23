@@ -14,6 +14,17 @@ services:
         depends_on:
             - mariadb
 
+    # PHP Service
+    php-74:
+        container_name: php-74
+        build:
+            dockerfile: php74-dockerfile
+        volumes:
+            - './www-akses-pypip/public:/var/www/html/akses-pypip'
+            - ./config/php74.ini:/usr/local/etc/php/php.ini
+        depends_on:
+            - mariadb
+
     # App 1 Nginx Service
     app-pypip:
         container_name: app-pypip
@@ -29,6 +40,22 @@ services:
             - './log/access-pypip.log:/var/log/nginx/access.log'
         depends_on:
             - php-72
+
+    # App 1 Nginx Service
+    app-akses-pypip:
+        container_name: app-akses-pypip
+        image: nginx:latest
+        ports:
+            - 8081:80
+        links:
+            - 'php-74'
+        volumes:
+            - './www-akses-pypip/public:/var/www/html/akses-pypip'
+            - './nginx-conf-akses-pypip:/etc/nginx/conf.d'
+            - './log/error-akses-pypip.log:/var/log/nginx/error.log'
+            - './log/access-akses-pypip.log:/var/log/nginx/access.log'
+        depends_on:
+            - php-74
 
     # MariaDB Service
     mariadb:

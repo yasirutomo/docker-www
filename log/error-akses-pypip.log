@@ -52,17 +52,44 @@
 2023/12/23 06:05:19 [error] 23#23: *104 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
 2023/12/23 06:06:12 [error] 23#23: *106 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
 2023/12/23 06:10:03 [error] 23#23: *108 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 06:11:04 [error] 23#23: *112 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 06:14:51 [error] 23#23: *114 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 06:16:10 [error] 23#23: *118 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 06:21:06 [error] 22#22: *126 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 06:24:25 [error] 22#22: *129 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /wp-login.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 06:25:04 [error] 22#22: *131 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 06:26:10 [error] 22#22: *137 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /wp-login.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 06:26:16 [error] 22#22: *139 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 06:30:09 [error] 22#22: *141 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 06:31:36 [error] 22#22: *143 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 06:35:41 [error] 22#22: *146 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 06:36:49 [error] 22#22: *148 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 06:40:50 [error] 21#21: *150 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 06:42:08 [error] 21#21: *152 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
+2023/12/23 06:18:45 [notice] 1#1: using the "epoll" event method
+2023/12/23 06:18:45 [notice] 1#1: nginx/1.25.3
+2023/12/23 06:18:45 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/12/23 06:18:45 [notice] 1#1: OS: Linux 5.15.0-91-generic
+2023/12/23 06:18:45 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/12/23 06:18:45 [notice] 1#1: start worker processes
+2023/12/23 06:18:45 [notice] 1#1: start worker process 20
+2023/12/23 06:18:45 [notice] 1#1: start worker process 21
+2023/12/23 06:18:45 [notice] 1#1: start worker process 22
+2023/12/23 06:18:45 [notice] 1#1: start worker process 23
+2023/12/23 06:32:15 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/12/23 06:32:15 [notice] 23#23: gracefully shutting down
+2023/12/23 06:32:15 [notice] 22#22: gracefully shutting down
+2023/12/23 06:32:15 [notice] 20#20: gracefully shutting down
+2023/12/23 06:32:15 [notice] 21#21: gracefully shutting down
+2023/12/23 06:32:15 [notice] 23#23: exiting
+2023/12/23 06:32:15 [notice] 22#22: exiting
+2023/12/23 06:32:15 [notice] 21#21: exiting
+2023/12/23 06:32:15 [notice] 20#20: exiting
+2023/12/23 06:32:15 [notice] 23#23: exit
+2023/12/23 06:32:15 [notice] 22#22: exit
+2023/12/23 06:32:15 [notice] 21#21: exit
+2023/12/23 06:32:15 [notice] 20#20: exit
+2023/12/23 06:32:15 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/12/23 06:32:15 [notice] 1#1: worker process 21 exited with code 0
+2023/12/23 06:32:15 [notice] 1#1: worker process 22 exited with code 0
+2023/12/23 06:32:15 [notice] 1#1: signal 29 (SIGIO) received
+2023/12/23 06:32:15 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/12/23 06:32:15 [notice] 1#1: worker process 20 exited with code 0
+2023/12/23 06:32:15 [notice] 1#1: worker process 23 exited with code 0
+2023/12/23 06:32:15 [notice] 1#1: exit
+2023/12/23 06:33:20 [notice] 1#1: using the "epoll" event method
+2023/12/23 06:33:20 [notice] 1#1: nginx/1.25.3
+2023/12/23 06:33:20 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/12/23 06:33:20 [notice] 1#1: OS: Linux 5.15.0-91-generic
+2023/12/23 06:33:20 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/12/23 06:33:20 [notice] 1#1: start worker processes
+2023/12/23 06:33:20 [notice] 1#1: start worker process 20
+2023/12/23 06:33:20 [notice] 1#1: start worker process 21
+2023/12/23 06:33:20 [notice] 1#1: start worker process 22
+2023/12/23 06:33:20 [notice] 1#1: start worker process 23
