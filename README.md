@@ -48,9 +48,8 @@ server {
 - backup: docker exec CONTAINER /usr/bin/mysqldump -u root --password=root DATABASE > DATABASE.sql
 - user:
 ```
-GRANT SELECT
-ON db1.* TO 'admin_restore_temp'@'localhost' 
-IDENTIFIED BY 'its_pwd';
+GRANT USAGE ON *.* To USER_BARU IDENTIFIED by 'PASSWORD';
+GRANT ALL PRIVILEGES ON DATABASE.* TO USER_BARU;
 ```
 
 ## Permison www-data
