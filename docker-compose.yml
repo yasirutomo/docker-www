@@ -1,0 +1,51 @@
+version: '3.8'
+
+# Services
+services:
+
+    # PHP Service
+    php-80:
+        container_name: php-80
+        build:
+            dockerfile: php80-dockerfile
+        volumes:
+            - './www-pypip/public:/var/www/html/pypip'
+            - ./config/php80.ini:/usr/local/etc/php/php.ini
+        depends_on:
+            - mariadb
+
+    # App 1 Nginx Service
+    app-pypip:
+        container_name: app-pypip
+        image: nginx:latest
+        ports:
+            - 8080:80
+        links:
+            - 'php-80'
+        volumes:
+            - './www-pypip/public:/var/www/html/pypip'
+            - './nginx-conf-pypip:/etc/nginx/conf.d'
+            - './log/error-pypip.log:/var/log/nginx/error.log'
+            - './log/access-pypip.log:/var/log/nginx/access.log'
+        depends_on:
+            - php_80
+
+    # MariaDB Service
+    mariadb:
+        container_name: mariadb
+        image: mariadb:10.9
+        environment:
+            MYSQL_ROOT_PASSWORD: Telekomunikas1
+        volumes:
+            - ./mysqldata:/var/lib/mysql
+
+    # phpMyAdmin Service
+    phpmyadmin:
+        container_name: phpmyadmin
+        image: phpmyadmin/phpmyadmin:latest
+        ports:
+            - 8090:80
+        environment:
+            PMA_HOST: mariadb
+        depends_on:
+            - mariadb

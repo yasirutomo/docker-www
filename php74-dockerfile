@@ -1,0 +1,50 @@
+FROM php:7.4-fpm
+RUN apt-get update \
+&& apt-get install -y wget unzip
+
+RUN docker-php-ext-install -j$(nproc) mysqli
+
+RUN set -eux; apt-get update; apt-get install -y libzip-dev
+
+RUN apt-get update \
+  && apt-get install -f -y --no-install-recommends \
+  rsync \
+  netcat \
+  curl \
+  libicu-dev \
+  libmemcached-dev \
+  libz-dev \
+  libpq-dev \
+  libjpeg-dev \
+  libfreetype6-dev \
+  libmcrypt-dev \
+  libbz2-dev \
+  libjpeg62-turbo-dev \
+  gnupg \
+  libldap2-dev \
+  libpng-dev \
+  libxslt-dev \
+  unixodbc-dev \
+  uuid-dev \
+  ghostscript \
+  libaio1 \
+  libgss3 \
+  libxslt1.1 \
+  locales \
+  sassc \
+  unixodbc \
+  unzip \
+  zip \
+  libmemcached11 \
+  libldap-2.4-2
+
+RUN docker-php-ext-configure soap --enable-soap \
+&& docker-php-ext-configure bcmath --enable-bcmath \
+&& docker-php-ext-configure pcntl --enable-pcntl \
+&& docker-php-ext-configure zip \
+&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ \
+&& docker-php-ext-install -j$(nproc) zip opcache pgsql intl soap xmlrpc bcmath pcntl sockets ldap
+
+RUN apt-get autopurge -y \
+    && apt-get autoremove -y \
+    && apt-get autoclean \
