@@ -92,6 +92,13 @@
 2023/12/23 07:46:02 [error] 23#23: *216 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
 2023/12/23 07:47:23 [error] 23#23: *218 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
 2023/12/23 07:52:24 [error] 23#23: *220 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 07:53:42 [error] 23#23: *222 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 07:58:50 [error] 23#23: *224 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/23 08:00:11 [error] 23#23: *228 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
+2023/12/23 08:00:01 [notice] 1#1: using the "epoll" event method
+2023/12/23 08:00:01 [notice] 1#1: nginx/1.25.3
+2023/12/23 08:00:01 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/12/23 08:00:01 [notice] 1#1: OS: Linux 5.15.0-91-generic
+2023/12/23 08:00:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/12/23 08:00:01 [notice] 1#1: start worker processes
+2023/12/23 08:00:01 [notice] 1#1: start worker process 20
+2023/12/23 08:00:01 [notice] 1#1: start worker process 21
+2023/12/23 08:00:01 [notice] 1#1: start worker process 22
+2023/12/23 08:00:01 [notice] 1#1: start worker process 23

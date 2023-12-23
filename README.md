@@ -4,6 +4,7 @@
 - apt install nginx
 - cd /etc/nginx/site-available
 - nano pypip.id.conf:
+```
 server {
     listen 80;
     listen [::]:80;
@@ -21,7 +22,7 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
     }
 }
------------
+```
 - ln -s /etc/nginx/sites-available/pypip.id.conf /etc/nginx/sites-enabled/
 - systemctl restart nginx
 - akses: http://pypip.id
