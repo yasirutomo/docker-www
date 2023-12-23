@@ -4,13 +4,13 @@ version: '3.8'
 services:
 
     # PHP Service
-    php-80:
-        container_name: php-80
+    php-72:
+        container_name: php-72
         build:
-            dockerfile: php80-dockerfile
+            dockerfile: php72-dockerfile
         volumes:
             - './www-pypip/public:/var/www/html/pypip'
-            - ./config/php80.ini:/usr/local/etc/php/php.ini
+            - ./config/php72.ini:/usr/local/etc/php/php.ini
         depends_on:
             - mariadb
 
@@ -21,14 +21,14 @@ services:
         ports:
             - 8080:80
         links:
-            - 'php-80'
+            - 'php-72'
         volumes:
             - './www-pypip/public:/var/www/html/pypip'
             - './nginx-conf-pypip:/etc/nginx/conf.d'
             - './log/error-pypip.log:/var/log/nginx/error.log'
             - './log/access-pypip.log:/var/log/nginx/access.log'
         depends_on:
-            - php_80
+            - php-72
 
     # MariaDB Service
     mariadb:

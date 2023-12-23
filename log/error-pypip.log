@@ -1,0 +1,11 @@
+2023/12/23 03:13:31 [emerg] 1#1: host not found in upstream "php_7" in /etc/nginx/conf.d/nginx.conf:15
+2023/12/23 03:17:11 [notice] 1#1: using the "epoll" event method
+2023/12/23 03:17:11 [notice] 1#1: nginx/1.25.3
+2023/12/23 03:17:11 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/12/23 03:17:11 [notice] 1#1: OS: Linux 5.15.0-91-generic
+2023/12/23 03:17:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/12/23 03:17:11 [notice] 1#1: start worker processes
+2023/12/23 03:17:11 [notice] 1#1: start worker process 21
+2023/12/23 03:17:11 [notice] 1#1: start worker process 22
+2023/12/23 03:17:11 [notice] 1#1: start worker process 23
+2023/12/23 03:17:11 [notice] 1#1: start worker process 24
