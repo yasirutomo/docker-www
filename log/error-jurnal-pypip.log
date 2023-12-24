@@ -426,23 +426,51 @@
 2023/12/24 07:00:26 [error] 22#22: *1100 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /wp-login.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
 2023/12/24 07:08:44 [error] 21#21: *1103 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
 2023/12/24 07:11:21 [error] 21#21: *1105 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 07:19:24 [error] 21#21: *1107 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 07:20:53 [error] 21#21: *1109 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 07:27:19 [error] 21#21: *1111 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 07:28:47 [error] 21#21: *1113 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 07:34:06 [error] 21#21: *1115 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 07:35:24 [error] 21#21: *1117 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 07:37:26 [error] 21#21: *1119 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /wp-login.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 07:40:17 [error] 21#21: *1121 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 07:41:32 [error] 21#21: *1123 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 07:45:46 [error] 21#21: *1125 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 07:46:46 [error] 21#21: *1127 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 07:50:52 [error] 21#21: *1129 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 07:52:00 [error] 21#21: *1131 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 07:55:57 [error] 24#24: *1133 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 07:56:48 [error] 24#24: *1135 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 08:00:43 [error] 24#24: *1138 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 08:01:39 [error] 24#24: *1140 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 08:05:30 [error] 24#24: *1142 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 08:06:32 [error] 24#24: *1144 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
-2023/12/24 08:10:14 [error] 24#24: *1146 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "POST /xmlrpc.php HTTP/1.0", upstream: "fastcgi://172.26.0.3:9000", host: "pypip.id"
+2023/12/24 07:54:04 [notice] 1#1: using the "epoll" event method
+2023/12/24 07:54:04 [notice] 1#1: nginx/1.25.3
+2023/12/24 07:54:04 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/12/24 07:54:04 [notice] 1#1: OS: Linux 5.15.0-91-generic
+2023/12/24 07:54:04 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/12/24 07:54:04 [notice] 1#1: start worker processes
+2023/12/24 07:54:04 [notice] 1#1: start worker process 20
+2023/12/24 07:54:04 [notice] 1#1: start worker process 21
+2023/12/24 07:54:04 [notice] 1#1: start worker process 22
+2023/12/24 07:54:04 [notice] 1#1: start worker process 23
+2023/12/24 07:54:22 [error] 20#20: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /var/www/html/jurnal-pypip/public/index.php on line 2" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.26.0.10:9000", host: "localhost:8083"
+2023/12/24 07:56:05 [error] 22#22: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /var/www/html/jurnal-pypip/public/index.php on line 2" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "GET / HTTP/1.0", upstream: "fastcgi://172.26.0.10:9000", host: "jurnal.pypip.id"
+2023/12/24 07:56:05 [error] 21#21: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /var/www/html/jurnal-pypip/public/index.php on line 2" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.0", upstream: "fastcgi://172.26.0.10:9000", host: "jurnal.pypip.id", referrer: "http://jurnal.pypip.id/"
+2023/12/24 08:02:02 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/12/24 08:02:02 [notice] 23#23: gracefully shutting down
+2023/12/24 08:02:02 [notice] 22#22: gracefully shutting down
+2023/12/24 08:02:02 [notice] 23#23: exiting
+2023/12/24 08:02:02 [notice] 22#22: exiting
+2023/12/24 08:02:02 [notice] 20#20: gracefully shutting down
+2023/12/24 08:02:02 [notice] 22#22: exit
+2023/12/24 08:02:02 [notice] 23#23: exit
+2023/12/24 08:02:02 [notice] 20#20: exiting
+2023/12/24 08:02:02 [notice] 20#20: exit
+2023/12/24 08:02:02 [notice] 21#21: gracefully shutting down
+2023/12/24 08:02:02 [notice] 21#21: exiting
+2023/12/24 08:02:02 [notice] 21#21: exit
+2023/12/24 08:02:02 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/12/24 08:02:02 [notice] 1#1: worker process 20 exited with code 0
+2023/12/24 08:02:02 [notice] 1#1: worker process 23 exited with code 0
+2023/12/24 08:02:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/12/24 08:02:02 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/12/24 08:02:02 [notice] 1#1: worker process 21 exited with code 0
+2023/12/24 08:02:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/12/24 08:02:02 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/12/24 08:02:02 [notice] 1#1: worker process 22 exited with code 0
+2023/12/24 08:02:02 [notice] 1#1: exit
+2023/12/24 08:08:55 [notice] 1#1: using the "epoll" event method
+2023/12/24 08:08:55 [notice] 1#1: nginx/1.25.3
+2023/12/24 08:08:55 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/12/24 08:08:55 [notice] 1#1: OS: Linux 5.15.0-91-generic
+2023/12/24 08:08:55 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/12/24 08:08:55 [notice] 1#1: start worker processes
+2023/12/24 08:08:55 [notice] 1#1: start worker process 20
+2023/12/24 08:08:55 [notice] 1#1: start worker process 21
+2023/12/24 08:08:55 [notice] 1#1: start worker process 22
+2023/12/24 08:08:55 [notice] 1#1: start worker process 23
+2023/12/24 08:09:03 [error] 21#21: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /var/www/html/jurnal-pypip/public/index.php on line 2" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "GET / HTTP/1.0", upstream: "fastcgi://172.26.0.10:9000", host: "jurnal.pypip.id"
+2023/12/24 08:09:04 [error] 20#20: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  phpinfo(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /var/www/html/jurnal-pypip/public/index.php on line 2" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.0", upstream: "fastcgi://172.26.0.10:9000", host: "jurnal.pypip.id", referrer: "http://jurnal.pypip.id/"
