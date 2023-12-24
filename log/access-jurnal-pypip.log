@@ -594,3 +594,4 @@
 172.26.0.1 - - [24/Dec/2023:08:09:03 +0000] "GET / HTTP/1.0" 200 98594 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0" "125.162.214.119"
 172.26.0.1 - - [24/Dec/2023:08:09:04 +0000] "GET /favicon.ico HTTP/1.0" 200 98549 "http://jurnal.pypip.id/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0" "125.162.214.119"
 172.26.0.1 - - [24/Dec/2023:08:09:12 +0000] "GET /phpextcek.php HTTP/1.0" 200 535 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0" "125.162.214.119"
+172.26.0.1 - - [24/Dec/2023:08:10:59 +0000] "GET /phpextcek.php HTTP/1.0" 200 535 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0" "125.162.214.119"

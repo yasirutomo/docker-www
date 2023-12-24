@@ -4,6 +4,17 @@ version: '3.8'
 services:
 
     # PHP Service
+    php-56:
+        container_name: php-56
+        build:
+            dockerfile: php56-dockerfile
+        volumes:
+            - './www-jurnal-pypip/public:/var/www/html/jurnal-pypip'
+            - ./config/php56.ini:/usr/local/etc/php/php.ini
+        depends_on:
+            - mariadb
+
+    # PHP Service
     php-72:
         container_name: php-72
         build:
@@ -83,6 +94,23 @@ services:
             - './log/access-cas-pypip.log:/var/log/nginx/access.log'
         depends_on:
             - php-80
+
+    # App 1 Nginx Service
+    app-jurnal-pypip:
+        container_name: app-jurnal-pypip
+        image: nginx:latest
+        ports:
+            - 8083:80
+        links:
+            - 'php-56'
+        volumes:
+            - './www-jurnal-pypip/public:/var/www/html/jurnal-pypip'
+            - './nginx-conf-jurnal-pypip:/etc/nginx/conf.d'
+            - './log/error-jurnal-pypip.log:/var/log/nginx/error.log'
+            - './log/access-jurnal-pypip.log:/var/log/nginx/access.log'
+        depends_on:
+            - php-56
+
 
     # MariaDB Service
     mariadb:
