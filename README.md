@@ -55,3 +55,14 @@ GRANT ALL PRIVILEGES ON DATABASE.* TO USER_BARU;
 ## Permison www-data
 - chown -R www-data:www-data public
 - chmod -R 755
+
+## File Upload Size
+- Tambahkan di nginx.conf, baik di host dan container (setelah server{):
+client_max_body_size 15M;
+
+Ubah php.ini (config container):
+- upload_max_filesize = 15M
+- post_max_size = 15M
+
+(optional) config in container: 
+cd /usr/local/etc/php
