@@ -119,7 +119,7 @@ services:
         container_name: mariadb
         image: mariadb:10.9
         environment:
-            MYSQL_ROOT_PASSWORD: Telekomunikas1
+            MYSQL_ROOT_PASSWORD: PASSWORDnya
         volumes:
             - ./mysqldata:/var/lib/mysql
 

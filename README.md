@@ -1,6 +1,10 @@
 # docker-www
+Konfigurasi docker basic untuk web dan database server.
 
-## Host:
+## Basic
+Clone dan jalankan docker compose pada server host.
+
+## Host (Reverse Proxy):
 - apt install nginx
 - cd /etc/nginx/site-available
 - nano pypip.id.conf:
@@ -57,12 +61,16 @@ GRANT ALL PRIVILEGES ON DATABASE.* TO USER_BARU;
 - chmod -R 755
 
 ## File Upload Size
-- Tambahkan di nginx.conf, baik di host dan container (setelah server{):
+- Tambahkan di nginx.conf, baik di host dan container (setelah "server{"):
+```
 client_max_body_size 15M;
-
-Ubah php.ini (config container):
-- upload_max_filesize = 15M
-- post_max_size = 15M
-
-(optional) config in container: 
-cd /usr/local/etc/php
+```
+- Ubah php.ini (config/):
+```
+upload_max_filesize = 15M
+post_max_size = 15M
+```
+- (Optional) config dalam container (docker exec -it ct-name /bin/bash):
+```
+cd /usr/local/etc/php (cek: php.ini, php.ini-production dan php.ini-development)
+```
