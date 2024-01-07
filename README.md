@@ -48,8 +48,14 @@ server {
 - https://pypip.id/
 
 ## Database
-- restore: cat backup.sql | docker exec -i CONTAINER /usr/bin/mysql -u root --password=root DATABASE
-- backup: docker exec CONTAINER /usr/bin/mysqldump -u root --password=root DATABASE > DATABASE.sql
+- restore: 
+```
+cat backup.sql | docker exec -i CONTAINER /usr/bin/mysql -u root --password=root DATABASE
+```
+- backup: 
+```
+docker exec CONTAINER /usr/bin/mysqldump -u root --password=root DATABASE > DATABASE.sql
+```
 - user:
 ```
 GRANT USAGE ON *.* To USER_BARU IDENTIFIED by 'PASSWORD';
